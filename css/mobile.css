@@ -1,0 +1,111 @@
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        min-width: 100%;
+    }
+    nav.navbar {
+        width: 100%;
+        margin: 0;
+        background-color: #f0f0f0;
+        border-top: 3px solid #222;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-brand {
+        font-size: 1.8rem;
+        padding-top: 10px;
+    }
+    .carousel-caption {
+        position: unset;
+    }
+    .head {
+        width: 100%;
+        background-image: unset;
+        background-color: #f0f0f0;
+        height: auto;
+    }
+    .head-content {
+        width: 100%;
+    }
+    .rightblock {
+        margin: 0 auto !important;
+        text-align: center;
+        float: left;
+        padding-left: 10px;
+    }
+    .text-1 {
+        font-size: 2.2rem;
+        line-height: 1.5;
+    }
+    .text-2 {
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 500;
+        font-family: arial;
+    }
+    h2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 5rem;
+    }
+    h3 {
+        font-family: 'Pacifico', cursive;
+        color: #6e6e6e;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    #content {
+        padding-bottom: 15px;
+        overflow: hidden;
+        background: #f0f0f0;
+        padding-top: 10px;
+    }
+    .p-text {
+        text-align: justify;
+        font-size: 1.3rem;
+    }
+    a.button-1 {
+        background: unset;
+        cursor: pointer;
+        color: #3d3d3d;
+        text-decoration: none;
+        display: inline-block;
+        padding: 7px 22px 9px 22px;
+        border-radius: 3px;
+        box-shadow: 3px 3px 3px #d4d4d4;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+        background-image: unset;
+    }
+    .p-text-biliyonmu {
+        font-size: 1.5rem;
+        color: #000 !important;
+        text-shadow: unset !important;
+        box-shadow: unset !important;
+    }
+    .footer-distributed {
+        padding: 50px 10px 0 !important;
+        margin-top: 0!important;
+    }
+    .footer-company-name {
+        background-color: #222!important;
+        margin: 0 -25px!important;
+        padding: 10px 5px!important;
+        font-size: 1.4rem!important;
+        text-align: center!important;
+    }
+    .introduction {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 2rem;
+        color: #222;
+        font-family: unset;
+        font-weight: 300;
+    }
+}

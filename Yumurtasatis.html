@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript">
+        if (screen.width <= 768) {
+            document.location = "./m-index.html";
+        }
+    </script>
+    <title>Yumurta Diyarı</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/superfish.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ui.totop.css">
+    <link rel="stylesheet" href="css/Loader.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Unkempt' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script src="js/jquery.hoverIntent.minified.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/Loader.JS.js"></script>
+    <!-- 
+  <script type="text/javascript">
+    $(window).load(function () {
+      $().UItoTop({
+        easingType: 'easeOutQuart'
+      });
+    }) 
+  </script>-->
+    <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+    <div class="kddtop">
+        <div class="kddtut">
+            <p>
+                <b>Duyuru</b><br/><br/> Sitemize hoş geldiniz!. Guncel Duyurularımızı burdan takip edebilrsiniz..
+                <style>
+                    input+span {
+                        padding-right: 30px;
+                    }
+
+                    input:invalid+span:after {
+                        position: absolute;
+                        content: '✖';
+                        padding-left: 5px;
+                    }
+
+                    input:valid+span:after {
+                        position: absolute;
+                        content: '✓';
+                        padding-left: 5px;
+                    }
+
+                    .kddtop {
+                        right: 16px;
+                        width: 300px;
+                        min-height: 180px;
+                        background: transparent;
+                        margin: 0 auto;
+                        position: fixed;
+                        font-family: Arial, sans-serif !important;
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        bottom: 16px;
+                        overflow: hidden;
+                        box-shadow: 0px 1px 4px transparent;
+                        z-index: 900;
+                    }
+
+                    .kdtutkdrs {
+                        margin: 0px;
+                        padding: 0px;
+                        border: none;
+                        text-decoration: none;
+                        display: block;
+                        width: 90px;
+                        height: 18px;
+                        background: transparent url(http://3.bp.blogspot.com/-MHH2O2mO5m8/T6UsNCyesCI/AAAAAAAAHhg/s7iG_hDCqg0/s1600/kd32.png);
+                        opacity: 0.4;
+                        filter: alpha(opacity=40);
+                        position: absolute;
+                        top: 0px;
+                        left: -56px;
+                        z-index: 60200;
+                    }
+
+                    .kddtop p {
+                        width: 0px;
+                        height: 0px;
+                        overflow: hidden;
+                        opacity: 0;
+                        position: relative;
+                        padding: 16px 0 0 20px;
+                        z-index: 5;
+                        margin: 0 0 0 0;
+                        color: rgba(0, 0, 0, 0);
+                    }
+
+                    .kddtop:hover p {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 1;
+                        color: #fff;
+                        transition: opacity 1s 0.4s ease;
+                    }
+
+                    .kddtop:before {
+                        content: "?";
+                        position: absolute;
+                        line-height: 1150px;
+                        text-align: center;
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 760px;
+                        z-index: 1;
+                        width: 1100px;
+                        height: 1100px;
+                        background: #F44336;
+                        border-radius: 50%;
+                        top: 100%;
+                        left: 50%;
+                        -webkit-transform: translate3d(-50%, -50%, 0) scale(0.035);
+                        transform: translate3d(-50%, -50%, 0) scale(0.035);
+                        -webkit-animation: .5s bounce infinite alternate-reverse;
+                        animation: .5s bounce infinite alternate-reverse;
+                        -webkit-transition: .5s -webkit-transform ease, .5s color ease;
+                        transition: .5s transform ease, .5s color ease;
+                    }
+
+                    .kddtop:after {
+                        content: "";
+                        position: absolute;
+                        left: 133px;
+                        right: 133px;
+                        bottom: 0;
+                        height: 15px;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 50%;
+                        -webkit-transition: .3s opacity ease;
+                        transition: .3s opacity ease;
+                        -webkit-animation: .5s shadow infinite alternate-reverse;
+                        animation: .5s shadow infinite alternate-reverse;
+                    }
+
+                    .kddtop:hover {
+                        box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+                        -webkit-transition: .5s all ease .25s;
+                        transition: .5s all ease .25s;
+                    }
+
+                    .kddtop:hover:before {
+                        color: #F44336;
+                        top: 100%;
+                        -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+                        transform: translate3d(-50%, -50%, 0) scale(1);
+                        -webkit-transition: .3s top ease, .5s -webkit-transform ease .25s, .5s color ease .25s;
+                        transition: .3s top ease, .5s transform ease .25s, .5s color ease .25s;
+                    }
+                </style>
+                <style>
+                    .kddtop:hover:after {
+                        opacity: 0;
+                    }
+
+                    .kddtop:hover .kddtut:before {
+                        width: 50px;
+                        -webkit-transition: .3s all ease 1.25s;
+                        transition: .3s all ease 1.25s;
+                    }
+
+                    .kddtop .kddtut {
+                        padding: 0 35px 5px 0;
+                        box-sizing: border-box;
+                        display: block;
+                        position: relative;
+                        opacity: 1;
+                        text-align: center;
+                    }
+
+                    .kddtop .kddtut:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 150px;
+                        rigth: 150px;
+                        width: 0px;
+                        height: 1px;
+                        background: black;
+                    }
+
+                    @-webkit-keyframes bounce {
+                        from {
+                            top: 93%;
+                        }
+                        to {
+                            top: 50%;
+                        }
+                    }
+
+                    @keyframes bounce {
+                        from {
+                            top: 93%;
+                        }
+                        to {
+                            top: 50%;
+                        }
+                    }
+
+                    @-webkit-keyframes shadow {
+                        from {
+                            height: 5px;
+                        }
+                        to {
+                            height: 20px;
+                            -webkit-transform: scale(0.3);
+                            transform: scale(0.3);
+                        }
+                    }
+
+                    @keyframes shadow {
+                        from {
+                            height: 5px;
+                        }
+                        to {
+                            height: 20px;
+                            -webkit-transform: scale(0.3);
+                            transform: scale(0.3);
+                        }
+                    }
+                </style>
+            </p>
+        </div>
+    </div>
+    <script src="https://www.koddostu.com/duzelt.js?no=287"></script>
+    <style>
+        div.koddosturenkli {
+            position: fixed;
+            z-index: 9999990;
+        }
+
+        div.sosyal7kd {
+            top: 50%;
+            right: 0px;
+            margin-top: -250px;
+            width: 80px;
+            height: 470px;
+            background: transparent;
+        }
+
+        .a8a {
+            display: block;
+            position: relative;
+            right: -62px;
+            float: right;
+            background: #44f;
+            width: 80px;
+            height: 60px;
+            margin: 0px 0px 6px 0px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: all 0.4s ease-out;
+            -webkit-transition: all 0.4s ease-out;
+            -webkit-box-shadow: -4px 0px 4px -4px #444;
+            -moz-box-shadow: -4px 0px 4px -4px #444;
+            box-shadow: -4px 0px 4px -4px #444;
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+    </style>
+    <style>
+        .a8a:hover,
+        .a8a:active,
+        .a8a:focus {
+            outline: 0;
+            right: -10px;
+            width: 60px;
+            transform: rotate(-11deg);
+            -ms-transform: rotate(-11deg);
+            -webkit-transform: rotate(-11deg);
+        }
+    </style>
+    <style>
+        .facebook7a {
+            background-image: url(http://icons.iconarchive.com/icons/danleech/simple/48/facebook-icon.png);
+            background-color: #4a6ea9
+        }
+
+        .google7a {
+            background-image: url(http://icons.iconarchive.com/icons/danleech/simple/48/google-plus-icon.png);
+            background-color: #e25e43
+        }
+
+        .twitter7a {
+            background-image: url(http://icons.iconarchive.com/icons/danleech/simple/48/twitter-icon.png);
+            background-color: #30dcf3
+        }
+
+        .linkedin7a {
+            background-image: url(http://icons.iconarchive.com/icons/danleech/simple/48/linkedin-icon.png);
+            background-color: #0095bc
+        }
+
+        .youtube7a {
+            background-image: url(http://icons.iconarchive.com/icons/danleech/simple/48/youtube-icon.png);
+            background-color: #e44840
+        }
+
+        .tumblr7a {
+            background-image: url(http://icons.iconarchive.com/icons/danleech/simple/48/tumblr-icon.png);
+            background-color: #375775
+        }
+
+        .rss7a {
+            background-image: url(http://icons.iconarchive.com/icons/danleech/simple/48/rss-icon.png);
+            background-color: #f2b63e
+        }
+
+        .ınstagram7a {
+            background-image: url(https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-32.png);
+            background-color: #ffffff
+        }
+
+        div.koddosturenkli {
+            _position: absolute;
+        }
+
+        div.sosyal7kd {
+            _bottom: auto;
+            _top: expression(ie6=(document.documentElement.scrollTop+document.documentElement.clientHeight - 52+"px"));
+        }
+    </style>
+
+</head>
+<div id="loader-wrapper" id="loading">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+<body>
+    <!-- <div id="loading" style="position: fixed;z-index: 9999;left: 0;right: 0;width: 100%;background-color: #787878;height: 100%;text-align: center;padding-top: 15%;"><img src="./svg-loaders/tail-spin.svg"></div>
+    ==============================header================================= -->
+
+    <header>
+        <koddostu>
+            <div class="koddosturenkli sosyal7kd">
+                <a target="_blank" href="https://www.facebook.com/Yumurta-Diyar%C4%B1-133959113817045/" class="facebook7a a8a"></a>
+                <a target="_blank" href="https://www.instagram.com/yumurta.diyari.07/?hl=tr" class="ınstagram7a a8a"></a>
+                <a target="_blank" href="https://plus.google.com/u/0/100974686164180978628" class="google7a a8a"></a>
+                <a target="_blank" href="https://twitter.com/YumurtaDiyari" class="twitter7a a8a"></a>
+                <a target="_blank" href="https://www.tumblr.com/blog/yumurtadiyari" class="tumblr7a a8a"></a>
+                <a target="_blank" href="http://www.yumurtadiyari.com/" class="rss7a a8a"></a>
+            </div>
+        </koddostu>
+        <script src="https://www.koddostu.com/duzelt.js?no=131"></script>
+        <div class="head">
+            <div class="head-content">
+                <div class="rightblock">
+                    <p class="">* Doğal <span>Yumurta</span> Üretiyoruz.</p>
+                    <p class="">Daha fazla bilgi için <a href="Hakkimizda.html" class="link">BURAYA TIKLAYINIZ.</a></p>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div class="container" style="margin-top: 4rem;">
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="marg1"><a href="index.html"><span>ANA SAYFA</span></a></li>
+                        <li class="marg1"><a href="Hakkimizda.html"><span>HAKKIMIZDA</span></a></li>
+                        <li class="current marg2"><a href="Yumurtasatis.html"><span>yumurta<br>Satışı</span></a></li>
+                        <li class="marg2"><a href="Saglik.html"><span>Sağlık</span></a></li>
+                        <li class="marg1"><a href="Iletisim.html"><span>İLETİŞİM</span></a></li>
+
+                    </ul>
+                    <div class="clear"></div>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <!--==============================header=================================-->
+
+    <!--==============================content================================-->
+
+    <section id="content">
+        <div class="container_12">
+            <div class="clear"></div>
+            <form class="form-horizontal">
+                <div class="col-md-12">
+                    <h2>Ürün Bilgileri</h2>
+                    <!-- <label class="name col-md-12">
+            <span style="min-width: 180px;float:left;padding-right: 10px;font-size: 1.4rem;"> Yumurta Cinsi :</span>
+            <div class="btn-group btn-gruop-sm" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">S</button>
+                <button type="button" class="btn btn-default">M</button>
+                <button type="button" class="btn btn-default">L</button>
+                <button type="button" class="btn btn-default">XL</button>
+              </div>er
+          </label> -->
+                    <div data-ng-app="" data-ng-init="quantity = 15 ; price = 0.75">
+                        <label class="name col-md-12">
+              <span style="min-width: 180px;float:left;float:left;padding-right: 10px;font-size: 1.4rem;"> Adet :</span>
+              <input type="number" id="number" class="col-md-3" name="quantity" value="15" ng-model="quantity" min="15" required>   
+            <p style=" font-style: italic;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; * Kampanya standartlarına gore <br>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; bir yumurta 0,75 Krş'tur.</p>
+             <p  style="min-width: 180px;float:left;float:left;padding-right: 10px;font-size: 1.4rem;"><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total:</b>
+               <span id="total">{{quantity * price}} TL</span></p>
+          </label></div>
+                </div>
+                <div class="col-md-12">
+                    <h2>Kişisel Bilgiler</h2>
+                    <label class="name col-md-12">
+            <span style="min-width: 180px;float:left;padding-right: 10px;font-size: 1.4rem;">Adınız Soyadınız:</span>
+                <input type="text" id="name" style="width: auto;" name="name" required >
+                <!-- <span class="error error-empty">*TLütfen Adınızı Giriniz.</span> -->
+                <span class="validity" style="min-width: 180px;font-size:1.4rem;"></span>
+            </label>
+                    <label class="phone col-md-12">
+              <span style="min-width: 180px;float:left;padding-right: 10px;font-size:1.4rem;">Telefonunuz:</span>
+                <input type="text" id="phone" type="tel"  style="width: auto;"  minlength="10" maxlength="10" placeholder="5XXXXXXXXX"required >
+                <!-- <input id="telNo" name="telNo" type="tel" required> -->
+                <span class="validity" style="min-width: 180px;font-size:1.4rem;"></span>
+                <!-- <span class="empty error-empty">*Lütfen Telefonunuz Giriniz</span> -->
+            </label>
+                    <label class="email col-md-12">
+              <span style="min-width: 180px;float:left;padding-right: 10px;font-size: 1.4rem;">E-mail:</span>
+                <input type="text" id="email" style="width: auto;" id="name" required>
+                <!-- <span class="empty error-empty">*Lütfen E-mail Giriniz...</span> -->
+            </label>
+                    <label class="email col-md-12">
+                <span style="min-width: 180px;float:left;padding-right: 10px;font-size: 1.4rem;">İl:</span>
+                <select class="form-control" id="il" style="width: auto;" required>
+                    <option value="">ANTALYA</option>
+                </select>
+            </label>
+                    <label class="email col-md-12">
+                <span style="min-width: 180px;float:left;padding-right: 10px;font-size: 1.4rem;">İlçe:</span>
+                <select class="form-control" id="ilce" style="width: auto;">
+                    <option value=""></option>
+                    <option value="">Akseki</option>
+                    <option value="">Aksu</option>
+                    <option value="">Alanya</option>
+                    <option value="">Demre</option>
+                    <option value="">Döşemealtı</option>
+                    <option value="">Elmalı</option>
+                    <option value="">Finike</option>
+                    <option value="">Gazipaşa</option>
+                    <option value="">Gündoğmuş</option>
+                    <option value="">İbradı</option>
+                    <option value="">Kaş</option>
+                    <option value="">Kemer</option>
+                    <option value="">Kepez</option>
+                    <option value="">Konyaaltı</option>
+                    <option value="">Korkuteli</option>
+                    <option value="">Kumluca</option>
+                    <option value="">Manavgat</option>
+                    <option value="">Muratpaşa</option>
+                    <option value="">Serik</option>
+                </select>
+                  <!-- »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  -->
+            </label>
+                    <label class="adress col-md-12">
+              <span style="min-width: 180px;float:left;padding-right: 10px;font-size:1.4rem;">Mahalle / Sokak:</span>
+                <textarea id="adress" rows="5" cols="37" ></textarea>
+                <!-- <span class="empty error-empty">*Lütfen Adres bilgilerini Giriniz...</span> -->
+            </label>
+                    <div>
+                        <span>Ödeme Tipi:</span>
+                        <span>Nakit:
+          <input type="radio" checked >
+              </span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h2>Sipariş Notunuz </h2>
+                    <label class="adress col-md-12">
+              <span style="min-width: 180px;float:left;padding-right: 10px;font-size:1.4rem;">Sipariş Notunuz :</span>
+                <textarea id="siparis_notu" rows="5" cols="37">İçerik Giriniz ...</textarea>
+            </label>
+                </div>
+                <!-- <input type="submit" value="Gönder" class="btn btn-primary">  -->
+                <button type="button" class="btn btn-info" name="btn-submit" id="btntikla" style="width: 51%;">SİPARİŞ VER</button>
+                <div style="display:none;" id="iframeblok">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <!-- <div class="container" style="margin-top:150px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div id="sonuc"></div>
+                        </div>
+                    </div>
+                </div> -->
+                <script>
+                    $('#btntikla').click(function () {
+                        if ($("#name").val() != "" && $('#phone').val() != "" && $('#email').val() != "" && $(
+                                '#adress').val() != "") {
+                            var req = "https://yumurtadiyarimail.herokuapp.com/adet/" + $('#number').val() +
+                                "/total/" + $('#total').text() +
+                                "/adsoyad/" + $('#name').val() +
+                                "/telefon/" + $('#phone').val() +
+                                "/email/" + $('#email').val() +
+                                "/ilce/" + $('#ilce').find('option:selected').text() +
+                                "/adres/" + $('#adress').val() +
+                                "/not/" + $('#siparis_notu').val() + "";
+
+                            $('#iframeblok > iframe').attr('src', req);
+                            alert("Siparişiniz Alınmıştır.");
+                            $("#name").val("");
+                            $('#phone').val("");
+                            $('#email').val("");
+                            $('#ilce').find('option:selected').text("");
+                            $('#adress').val("");
+                            $('#siparis_notu').val("İçerik Giriniz ...");
+                        } else {
+                            alert("Birşeyler Eksik gibi Lütfen Bilgilerinizi Kontrol Ediniz...")
+                        }
+                    });
+                </script>
+                <script>
+                    $(function () {
+                        $("#siparis_notu").focus(function () {
+                            var d = $(this).val();
+                            if (d == "İçerik Giriniz ...") {
+                                $(this).val("");
+                            }
+                        });
+                        $("#siparis_notu").blur(function () {
+                            var d = $(this).val();
+                            if (d == "") {
+                                $(this).val("İçerik Giriniz ...");
+                            }
+                        });
+                        $("#number").blur(function () {
+                            var d = $(this).val();
+                            if (d < 15) {
+                                $(this).val(15);
+                                // $("#sonuc").fadeIn(1000);
+                                // $("#sonuc").html("Girilen Not 0-100 Arasında Olmalıdır!");
+                                // $("#sonuc").removeClass();
+                                // $("#sonuc").addClass("alert alert-danger");
+                                // $("#sonuc").fadeOut(5000);
+                            }
+                        });
+
+
+                        $("#name").keypress(function (event) {
+                            console.log(event.which);
+                            if (event.which <= 93 && event.which >= 65 || event.which <= 122 && event.which >=
+                                97 || event.which == 8) {
+                                return true;
+                            }
+                            return false;
+                        });
+                        // $("#siparis_notu").keyup(function () {
+                        //     var uzunluk = $(this).val().length;
+                        //     var s = 50 - uzunluk;
+                        //     $("#txtSonuc").val(s + " Karakter Hakkınız Kaldı");
+                        // });
+                    });
+                </script>
+                <script>
+                        $("#email").blur(function(){
+                        var email = $("input#email").val();
+                        if(MailKontrol(email))
+                        {
+                        alert("Email Adresi Geçerli");
+                        }
+                        else
+                        {
+                        alert("Geçersiz veya Hatalı Email");
+                        return false;
+                        }
+                        })
+                        function MailKontrol(email)
+                        {
+                        var kontrol = new RegExp(/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/i);
+                        return kontrol.test(email);
+                        }</script>
+            </form>
+        </div>
+    </section>
+    <section id="content">
+        <div class="container_12">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="alert alert-warning" role="alert"><strong>NOT :</strong> Sipariş İptaliniz için Lütfen tarafımıza Çağrı bırakınız... <br> &emsp; &emsp;
+                        &emsp;&emsp;&emsp;&emsp; Biz Size Dönüş Yapalım ...</div>
+                </div>
+            </div>
+        </div>
+        <div class="container_12">
+            <div class="row">
+                <div class=""> </div>
+                <div class="col-sm-8">
+                    <div class="alert alert-success" role="alert" style="text-align: center;">Whatsapp veya çağrı yoluyla sipariş verebilrisiniz. <br>
+                        <strong>+90 (535)-864-6828</strong> <br> <i class="fa fa-whatsapp" style="font-size:24px"></i>&nbsp;&nbsp;
+                        <i class="fa fa-phone" style="font-size:24px"></i> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================footer=================================-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/footer-distributed-with-address-and-phones.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <footer class="container">
+        <div class="footer-distributed">
+            <div class="footer-left">
+
+                <h3>Gunes<span>Yumurta</span></h3>
+
+                <p class="footer-links">
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="Hakkimizda.html">Hakkımızda</a>
+                    <a href="Yumurtasatis.html">Yumurta Satış</a>
+                    <a href="Saglik.html">Sağlık</a>
+                    <a href="Iletisim.html">İletişim</a>
+                </p>
+                <p class="footer-company-name">Yumurta Diyarı &copy; 2017</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Doyran Mahallesi, Karayer Mevkii</span> Konyaaltı, ANTALYA</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+90 (535)-864-6828</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>
+                        <a href="yumurtadiyari@gmail.com"></a>info@yumurtadiyari.com</p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <h2 class="footer-company-about" style="font-family: 'Dancing Script', cursive; font-size:51px;">
+                    Kalite <br> Tesadüf Değil , <br> Seçimdir ...
+                </h2>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107692814-1"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#loading').remove();
+            }, 1000);
+        });
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-107692814-1');
+    </script>
+
+</body>
+
+</html>

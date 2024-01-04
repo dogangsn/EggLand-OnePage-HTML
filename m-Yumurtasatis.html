@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Yumurta Diyarı</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/Loader.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+     <!--    <script type="text/javascript" src="js/superfish.js"></script>
+ <script src="js/jquery.hoverIntent.minified.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+    <div id="loading" style="position: fixed;z-index: 9999;left: 0;right: 0;width: 100%;background-color: #787878;height: 100%;text-align: center;padding-top: 75%;"><img src="./svg-loaders/tail-spin.svg"></div>
+    <div class="head">
+        <div class="head-content">
+            <!-- <div class="rightblock">
+                <p class="">* Doğal <span>Yumurta</span> Üretiyoruz.</p>
+                <p class="">Daha fazla bilgi için <a href="/m-Hakkimizda.html" class="link">BURAYA TIKLAYINIZ.</a></p>
+            </div> -->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+            <a class="navbar-brand" href="javascript:;">YUMURTADİYARI <sup> Yumurtasatis</sup></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="./m-index.html">ANA SAYFA</a></li>
+                <li><a href="./m-Hakkimizda.html">HAKKIMIZDA</a></li>
+                <li class="active"><a href="./m-Yumurtasatis.html">YUMURTA SATIŞ</a></li>
+                <li><a href="./m-Saglik.html">SAĞLIK</a></li>
+                <li><a href="./m-Iletisim.html">İLETİŞİM</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </nav>
+    <!-- <div class="clearfix"></div>
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p class="text-1">Gelİn Yumurtaları <span>Beraber</span></p>
+                        <p class="text-2">Sepete Koyalım.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p class="text-1"><span>Taze</span> Tavuk Yumurtası</p>
+                        <p class="text-2">100% Mükemmel Kalİte</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p class="text-1"><span> Yumurta</span> doğal ambalajı İle hİç bİr</p>
+                        <p class="text-2"> şekİlde hİle yapılmayan tek gıdadır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div> -->
+    <!-- <script>
+        $('#myCarousel').carousel({
+            interval: 2000,
+            cycle: true
+        });
+    </script> -->
+    <div class="clearfix"></div>
+    <!--==============================header=================================-->
+
+    <!--==============================content================================-->
+
+    <section id="content">
+        <div class="container_12">
+            <div class="clear"></div>
+            <form class="form-horizontal">
+                <div class="col-md-12">
+                    <h2 style="font-size: 4.2rem;border-bottom: 1px solid #222;width: fit-content;margin: 0 auto 20px;padding-bottom: 5px;">Ürün Bilgileri</h2>
+                    <div data-ng-app="" data-ng-init="quantity = 15; price = 0.75">
+                        <label class="name col-md-12">
+              <span style="min-width: 180px;float:left;float:left;padding-right: 10px;font-size: 1.4rem;"> Adet :</span>
+              <input type="number" id="number" class="col-md-3" name="quantity" value="15" ng-model="quantity" min="15" required>   
+            <p >* Kampanya standartlarına gore bir yumurta 0,75 Krş'tur.</p>
+             <p  style="    min-width: 180px; padding-right: 10px; font-size: 1.7rem;text-align: center;"><b>Total:</b>
+               <span id="total">{{quantity * price}} TL</span></p>
+          </label></div>
+                </div>
+                <br>
+                <hr><br>
+                <div class="col-md-12">
+                    <h2 style="font-size: 4.2rem;border-bottom: 1px solid #222;width: fit-content;margin: 0 auto 20px;padding-bottom: 5px;">Kişisel Bilgiler</h2>
+                    <label class="name col-md-12">
+            <span style="min-width: 180px;float:left;padding-right: 10px;font-size: 1.4rem;">Adınız Soyadınız:</span>
+                <input type="text" id="name" style="width: auto;" name="name" required >
+                <!-- <span class="error error-empty">*TLütfen Adınızı Giriniz.</span> -->
+                <span class="validity" style="min-width: 180px;font-size:1.4rem;"></span>
+            </label>
+                    <label class="phone col-md-12">
+              <span style="min-width: 180px;float:left;padding-right: 10px;font-size:1.4rem;">Telefonunuz:</span>
+                <input type="text" id="phone" type="tel"  style="width: auto;"  minlength="10" maxlength="10" placeholder="5XXXXXXXXX"required >
+                <!-- <input id="telNo" name="telNo" type="tel" required> -->
+                <span class="validity" style="min-width: 180px;font-size:1.4rem;"></span>
+                <!-- <span class="empty error-empty">*Lütfen Telefonunuz Giriniz</span> -->
+            </label>
+                    <label class="email col-md-12">
+              <span style="min-width: 180px;float:left;padding-right: 10px;font-size: 1.4rem;">E-mail:</span>
+                <input type="text" id="email" style="width: auto;" id="name" required>
+                <!-- <span class="empty error-empty">*Lütfen E-mail Giriniz...</span> -->
+            </label>
+                    <label class="email col-md-12">
+                <span style="min-width: 180px;float:left;padding-right: 10px;font-size: 1.4rem;">İl:</span>
+                <select class="form-control" id="il" style="width: 200px;" required>
+                    <option value="">ANTALYA</option>
+                </select>
+            </label>
+                    <label class="email col-md-12">
+                <span style="min-width: 180px; float:left; padding-right: 10px;font-size: 1.4rem;">İlçe:</span>
+                <select class="form-control" id="ilce" style="width: 200px;">
+                    <option value=""></option>
+                    <option value="">Akseki</option>
+                    <option value="">Aksu</option>
+                    <option value="">Alanya</option>
+                    <option value="">Demre</option>
+                    <option value="">Döşemealtı</option>
+                    <option value="">Elmalı</option>
+                    <option value="">Finike</option>
+                    <option value="">Gazipaşa</option>
+                    <option value="">Gündoğmuş</option>
+                    <option value="">İbradı</option>
+                    <option value="">Kaş</option>
+                    <option value="">Kemer</option>
+                    <option value="">Kepez</option>
+                    <option value="">Konyaaltı</option>
+                    <option value="">Korkuteli</option>
+                    <option value="">Kumluca</option>
+                    <option value="">Manavgat</option>
+                    <option value="">Muratpaşa</option>
+                    <option value="">Serik</option>
+                </select>
+                  <!-- »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  »  -->
+            </label>
+                    <label class="adress col-md-12">
+              <span style="min-width: 180px;float:left;padding-right: 10px;font-size:1.4rem;">Mahalle / Sokak:</span>
+                <textarea id="adress" rows="5" cols="37" style=" word-break: unset;word-wrap: unset;border: 2px solid #f4f4f4; border-radius: 3px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);padding: 3px 3px !important;word-spacing: 0;width: 300px;" ></textarea>
+                <!-- <span class="empty error-empty">*Lütfen Adres bilgilerini Giriniz...</span> -->
+            </label >
+                    <div class="adress col-md-12" style="font-size:1.4rem;">
+                        <span>Ödeme Tipi:</span>
+                        <span>Nakit:
+          <input type="radio" checked >
+              </span>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="col-md-12">
+                    <h2 style="font-size: 4.2rem;border-bottom: 1px solid #222;width: fit-content;margin: 0 auto 20px;padding-bottom: 5px;">Sipariş Notunuz </h2>
+                    <label class="adress col-md-12">
+              <span style="min-width: 180px;float:left;padding-right: 10px;font-size:1.4rem;">Sipariş Notunuz :</span>
+                <textarea id="siparis_notu" rows="5" cols="37" style=" word-break: unset;word-wrap: unset;border: 2px solid #f4f4f4; border-radius: 3px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);padding: 3px 3px !important;word-spacing: 0;width: 300px;">İçerik Giriniz ...</textarea>
+            </label>
+                </div>
+                <!-- <input type="submit" value="Gönder" class="btn btn-primary">  -->
+                <button type="button" class="btn btn-info" name="btn-submit" id="btntikla" style="width: 50%;margin: 10px auto 0;display: block;  height: 40px;">SİPARİŞ VER</button>
+                <div style="display:none;" id="iframeblok">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <script>
+                    $(function () {
+                        $("#siparis_notu").focus(function () {
+                            var d = $(this).val();
+                            if (d == "İçerik Giriniz ...") {
+                                $(this).val("");
+                            }
+                        });
+                        $("#siparis_notu").blur(function () {
+                            var d = $(this).val();
+                            if (d == "") {
+                                $(this).val("İçerik Giriniz ...");
+                            }
+                        });
+                        $("#number").blur(function () {
+                            var d = $(this).val();
+                            if (d < 15) {
+                                $(this).val(15);
+                                // $("#sonuc").fadeIn(1000);
+                                // $("#sonuc").html("Girilen Not 0-100 Arasında Olmalıdır!");
+                                // $("#sonuc").removeClass();
+                                // $("#sonuc").addClass("alert alert-danger");
+                                // $("#sonuc").fadeOut(5000);
+                            }
+                        });
+                        $("#name").keypress(function (event) {
+                            console.log(event.which);
+                            if (event.which <= 93 && event.which >= 65 || event.which <= 122 && event.which >=
+                                97 || event.which == 8) {
+                                return true;
+                            }
+                            return false;
+                        });
+                    });
+                    $('#btntikla').click(function () {
+                        if ($("#name").val() != "" && $('#phone').val() != "" && $('#email').val() != "" && $(
+                                '#adress').val() != "") {
+                            var req = "https://yumurtadiyarimail.herokuapp.com/adet/" + $('#number').val() +
+                                "/total/" + $('#total').text() +
+                                "/adsoyad/" + $('#name').val() +
+                                "/telefon/" + $('#phone').val() +
+                                "/email/" + $('#email').val() +
+                                "/ilce/" + $('#ilce').find('option:selected').text() +
+                                "/adres/" + $('#adress').val() +
+                                "/not/" + $('#siparis_notu').val() + "";
+                            $('#iframeblok > iframe').attr('src', req);
+                            alert("Siparişiniz Alınmıştır.");
+                            $("#name").val("");
+                            $('#phone').val("");
+                            $('#email').val("");
+                            $('#ilce').find('option:selected').text("");
+                            $('#adress').val("");
+                            $('#siparis_notu').val("İçerik Giriniz ...");
+                        } else {
+                            alert("Birşeyler Eksik gibi Lütfen Bilgilerinizi Kontrol Ediniz...")
+                        }
+                    });
+                </script>
+            </form>
+        </div>
+    </section>
+    <section id="content">
+        <div class="container_12">
+            <div class="row">
+                <div class=""> </div>
+                <div class="col-sm-6">
+                    <div class="alert alert-warning" role="alert" style="text-align: center;"><strong>NOT :</strong> Sipariş İptaliniz için Lütfen tarafımıza Çağrı bırakınız... <br> Biz Size Dönüş Yapalım ...</div>
+                </div>  
+            </div>
+        </div>
+        <div class="container_12">
+                <div class="row">
+                    <div class=""> </div>
+                    <div class="col-sm-6">
+                        <div class="alert alert-success" role="alert" style="text-align: center;">Ayriyetende Whatsapp veya çağrı yoluyla sipariş verebilrisiniz. <br> 
+                             <strong>+90 (535)-864-6828</strong> <br> <i class="fa fa-whatsapp" style="font-size:24px"></i>&nbsp;&nbsp;
+                             <i class="fa fa-phone" style="font-size:24px"></i> </div>
+                    </div>  
+                </div>
+            </div>
+
+    </section>
+    <!--==============================footer=================================-->
+    <link rel="stylesheet" href="./css/footer-distributed-with-address-and-phones.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <footer class="container">
+        <div class="footer-distributed">
+            <div class="footer-left">
+                <h3>Gunes
+                    <span>Yumurta</span>
+                </h3>
+                <p class="footer-links">
+                    <a href="./m-index.html">Ana Sayfa</a>
+                    <a href="./m-Hakkimizda.html">Hakkımızda</a>
+                    <a href="./m-Yumurtasatis.html">Yumurta Satış</a>
+                    <a href="./m-Saglik.html">Sağlık</a>
+                    <a href="./m-Iletisim.html">İletişim</a>
+                </p>
+            </div>
+            <div class="footer-center">
+                <i class="fa fa-map-marker"></i>
+                <i class="fa fa-phone"></i>
+                <i class="fa fa-envelope"></i>
+                <div>
+                    <p><span>Doyran Mahallesi, Karayer Mevkii</span> Konyaaltı, ANTALYA</p>
+                </div>
+                <div>
+                    <p>+90 (535)-864-6828</p>
+                </div>
+                <div>
+                    <p>
+                        <a href="yumurtadiyari@gmail.com"></a>info@yumurtadiyari.com</p>
+                </div>
+            </div>
+            <div class="footer-icons" style="text-align: center;">
+                    <a target="_blank" href="https://www.facebook.com/Yumurta-Diyar%C4%B1-133959113817045/"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/yumurta.diyari.07/?hl=tr"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://plus.google.com/u/0/100974686164180978628"><i class="fa fa-google-plus"></i></a>
+                    <a target="_blank" href="https://twitter.com/YumurtaDiyari"><i class="fa fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.tumblr.com/blog/yumurtadiyari"><i class="fa fa-tumblr"></i></a>
+                    <a target="_blank"href="http://www.yumurtadiyari.com/"><i class="fa fa-rss"></i></a>
+            </div><br>
+            <p class="footer-company-name">Yumurta Diyarı &copy; 2017</p>
+            <!-- <div class="footer-right">
+                <h2 class="footer-company-about" style="font-family: 'Dancing Script', cursive; font-size:51px;">
+                    Kalite <br> Tesadüf Değil , <br> Seçimdir ...
+                </h2>
+            </div>
+            <p class="footer-company-name"><a href="http://canakburu.com">Powered By  Can Akburu Yumurta Diyarı &copy; 2017</a></p> -->
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107692814-1"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#loading').remove();
+            }, 1000);
+        });
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-107692814-1');
+    </script>
+</body>
+</html>
